@@ -34,13 +34,16 @@
 /*=====================
    1.0 Variables start
 ==========================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500&family=Open+Sans:wght@400;600&display=swap');
+
 :root {
   --black: 0, 0, 0;
   --white: 255, 255, 255;
   --title-color: 245, 245, 245;
-  --content-color: 156, 157, 159;
-  --theme-color: 4, 103, 204;
-  --theme-color-red: 153,2,53;
+  --content-color: 000,000,000;
+  --theme-color: 162,93,182;
+  --theme-color-red: 162,93,182;
   --dark-title: 13, 18, 31;
   --Iconsax-Color: #6e7179;
   --secondary-color: 244, 137, 65;
@@ -163,7 +166,9 @@ html {
 
 body {
   position: relative;
-  font-family: "Outfit", sans-serif;
+  font-family: 'Cairo', sans-serif;
+
+  /* font-family: "Outfit", sans-serif; */
   /* background: linear-gradient(0deg, #0a0e17, #0a0e17), linear-gradient(179.9deg, #0a5b75 -47.93%, #02111a 98.07%); */
   background: linear-gradient(0deg, #fff, #fff), linear-gradient(179.9deg, #ffffff -47.93%, #ffffff 98.07%);
 }
@@ -337,7 +342,7 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: rgba(var(--theme-color), 1);
+  color: white;
   font-weight: 600;
   gap: 5px;
   margin-bottom: 0;
@@ -1734,6 +1739,8 @@ footer .footer-copyright ul li + li {
    3.2 header scss
 ==========================**/
 header {
+  direction: rtl;
+
   padding: calc(15px + 9 * (100vw - 320px) / 1600) calc(15px + 85 * (100vw - 320px) / 1600) 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3300,7 +3307,7 @@ header .offcanvas-backdrop {
 }
 .blog-listing .blog-content .main-title {
   font-size: 28px;
-  color: rgba(var(--white), 1);
+  color: rgba(var(--theme-color-red), 1);
   line-height: 1.2;
 }
 @media (max-width: 1300px) {
@@ -4966,6 +4973,8 @@ header .offcanvas-backdrop {
     4.5 Home Page scss
 ==========================**/
 .home-section {
+  direction: rtl;
+
   text-align: center;
   /* padding: calc(100px + 90 * (100vw - 320px) / 1600) 0 calc(40px + 20 * (100vw - 320px) / 1600); */
   position: relative;
@@ -5397,11 +5406,11 @@ header .offcanvas-backdrop {
   background-size: cover;
 }
 .service-section .service-box {
-  padding: 40px;
-  background: #1c2753;
+  background: #B6A5CA;
   position: relative;
   border-radius: 4px;
   height: 100%;
+  padding: 25px;
 }
 @media (max-width: 1400px) {
   .service-section .service-box {
@@ -5497,11 +5506,14 @@ header .offcanvas-backdrop {
       -ms-flex-align: center;
           align-items: center;
   gap: 10px;
+  flex-direction: column-reverse;
+  font-size: 35px;
 }
 .service-section .service-box .service-content p {
   color: rgba(var(--white), 1);
   margin-bottom: 0;
 }
+
 .service-section .service-box:hover:after {
   background: rgba(var(--theme-color), 0.25) !important;
 }
@@ -5793,7 +5805,7 @@ header .offcanvas-backdrop {
   z-index: -1;
 }
 .feature-section .feature-box {
-  background: #1c2753;
+  background: #B6A5CA;
   padding: 34px;
   border-radius: 4px;
   position: relative;
@@ -6367,7 +6379,7 @@ header .offcanvas-backdrop {
 }
 .faq-section .accordion .accordion-item {
   margin-bottom: 25px;
-  background: transparent;
+  background: #b6a5ca;
   border: 1px solid rgba(var(--title-color), 0.1);
   border-radius: 4px;
 }
@@ -7345,60 +7357,60 @@ header .offcanvas-backdrop {
   transition-delay: 0.6s;
 }
 
-.firas {
+.left-to-right {
   opacity: 0; 
   transform: translateX(-20px);
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-.firas:nth-child(3n + 1) {
+.left-to-right:nth-child(3n + 1) {
   transition-delay: 0.1s;
 }
 
-.firas:nth-child(3n + 2) {
+.left-to-right:nth-child(3n + 2) {
   transition-delay: 0.2s;
 }
 
-.firas:nth-child(3n + 3) {
+.left-to-right:nth-child(3n + 3) {
   transition-delay: 0.3s;
 }
 
-.shareef {
+.pop-up-animation {
   opacity: 0;
   transform: scale(0.8);
   transition: opacity 0.5s ease, transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.shareef:nth-child(4n + 1) {
+.pop-up-animation:nth-child(4n + 1) {
   transition-delay: 0.1s;
 }
 
-.shareef:nth-child(4n + 2) {
+.pop-up-animation:nth-child(4n + 2) {
   transition-delay: 0.2s;
 }
 
-.shareef:nth-child(4n + 3) {
+.pop-up-animation:nth-child(4n + 3) {
   transition-delay: 0.3s;
 }
-.shareef:nth-child(4n + 4) {
+.pop-up-animation:nth-child(4n + 4) {
   transition-delay: 0.4s;
 }
 
-.firas-invert {
+.right-to-left {
   opacity: 0;
   transform: translateX(20px);
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-.firas-invert:nth-child(3n + 1) {
+.right-to-left:nth-child(3n + 1) {
   transition-delay: 0.1s;
 }
 
-.firas-invert:nth-child(3n + 2) {
+.right-to-left:nth-child(3n + 2) {
   transition-delay: 0.2s;
 }
 
-.firas-invert:nth-child(3n + 3) {
+.right-to-left:nth-child(3n + 3) {
   transition-delay: 0.3s;
 }
 
@@ -7406,7 +7418,6 @@ header .offcanvas-backdrop {
   background-color: green;
   border: 5px solid #000000 !important;
 }
-
 
 /* invest button */
 

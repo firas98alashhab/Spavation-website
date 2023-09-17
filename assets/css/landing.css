@@ -21,6 +21,9 @@
 /*=====================
 1.0 Typography Scss start
 ==========================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500&family=Open+Sans:wght@400;600&display=swap');
+
 :root {
   --black: 0, 0, 0;
   --white: 255, 255, 255;
@@ -125,17 +128,19 @@ ul {
           margin-inline-start: 0;
 }
 
-.btn-solid {
+
+
+#invest-link-btn {
   background-color: rgba(var(--theme-color-red), 1) !important;
   font-size: calc(20px + 4 * (100vw - 320px) / 1600) !important;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   gap: calc(8px + 6 * (100vw - 320px) / 1600);
-  color: rgba(var(--dark-title), 1);
+  color: rgba(var(--white), 1);
   padding: calc(24px + 3 * (100vw - 320px) / 1600) calc(46px + 6 * (100vw - 320px) / 1600) !important;
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -146,18 +151,19 @@ ul {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-.btn-solid .iconsax svg [fill] {
+#invest-link-btn .iconsax svg [fill] {
   fill: rgba(var(--white), 1);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-.btn-solid:hover {
+#invest-link-btn:hover {
   background-color: transparent !important;
   color: rgba(var(--theme-color-red), 1) !important;
 }
-.btn-solid:hover .iconsax svg [fill] {
+#invest-link-btn:hover .iconsax svg [fill] {
   fill: rgba(var(--theme-color-red), 1);
 }
+
 
 .btn-solid-message {
   background-color: rgba(var(--theme-color), 1);
@@ -389,6 +395,15 @@ nav.navbar {
     padding-left: 0;
     padding-right: 0;
   }
+}
+
+.logo-img {
+  width: 100px;
+  transition: all 0.5s ease;
+}
+
+.logo-img:hover {
+  transform: rotateZ(90deg);
 }
 
 .navbar-nav {
@@ -835,7 +850,8 @@ nav.navbar {
   right: 0;
 }
 .home-section .home-sec .home-content h1 {
-  font-family: "Play", sans-serif;
+  font-family: 'Cairo', sans-serif;
+
   font-size: calc(28px + 26 * (100vw - 320px) / 1600);
   line-height: 1.2;
   color: rgba(var(--theme-color-red), 1);
@@ -845,7 +861,7 @@ nav.navbar {
   font-size: calc(18px + 2 * (100vw - 320px) / 1600);
   margin-bottom: 0;
 }
-.home-section .home-sec .home-content .btn-solid {
+.home-section .home-sec .home-content #invest-link-btn {
   margin-top: calc(35px + 20 * (100vw - 320px) / 1600);
 }
 .home-section .home-sec .home-content .btn-solid-message {
