@@ -1762,8 +1762,9 @@ header.sticky {
   left: 0;
   top: 0;
   width: 100%;
-  background-color: #111834c0;
-  padding: 15px calc(15px + 85 * (100vw - 320px) / 1600);
+  background-color: #fffffff2;
+  padding: 9px calc(15px + 85 * (100vw - 320px) / 1600);
+  border-bottom: 1px solid #a25db6;
 }
 
 /**=====================
