@@ -1440,6 +1440,7 @@ footer .footer-content .btn-solid-messag {
 /*=====================
    1.10 tap to top Scss start
 ==========================*/
+
 .tap-to-top-box {
   position: fixed;
   bottom: 30px;
@@ -1479,4 +1480,5 @@ footer .footer-content .btn-solid-messag {
 .tap-to-top-box .tap-to-top-button .iconsax svg [fill] {
   fill: rgba(var(--dark-title), 1);
 }
+
 /*# sourceMappingURL=landing.css.map */
