@@ -29,8 +29,8 @@
   --white: 255, 255, 255;
   --title-color: 245, 245, 245;
   --content-color: 175, 176, 182;
-  --theme-color: #34489d;
-  --theme-color-red: 153,2,53;
+  --theme-color: #dc1d1d;
+  --theme-color-red: 127,88,165;
   --dark-title: 13, 18, 31;
   --Iconsax-Color: #6e7179;
 }
@@ -857,7 +857,7 @@ nav.navbar {
   color: rgba(var(--theme-color-red), 1);
 }
 .home-section .home-sec .home-content p {
-  color: rgba(var(--content-color), 1);
+  color: #C7B4D3;
   font-size: calc(18px + 2 * (100vw - 320px) / 1600);
   margin-bottom: 0;
 }

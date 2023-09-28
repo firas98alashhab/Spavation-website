@@ -31,7 +31,7 @@ requestAnimationFrame(function loop() {
 document.querySelectorAll("[data-cursor]").forEach((item) => {
     item.addEventListener("mouseover", (e) => {
         if (item.dataset.cursor === "pointer") {
-            cursorBorder.style.backgroundColor = "rgba(0, 144, 144, .4)";
+            cursorBorder.style.backgroundColor = "rgba(127, 88, 165, .4)";
             cursorBorder.style.setProperty("--size", "55px");
         }
         if (item.dataset.cursor === "pointer2") {
