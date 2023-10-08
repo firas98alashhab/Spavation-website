@@ -407,16 +407,10 @@ nav.navbar {
 }
 
 .navbar-nav {
-  gap: 10px;
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-}
-@media (min-width: 1199px) {
-  .navbar-nav {
-    gap: 30px;
-  }
 }
 @media (max-width: 1199px) {
   .navbar-nav {
@@ -424,7 +418,6 @@ nav.navbar {
     left: unset;
     -webkit-transform: none;
             transform: none;
-    gap: 0;
   }
 }
 .navbar-nav .nav-link {
@@ -442,9 +435,6 @@ nav.navbar {
 @media (max-width: 1500px) {
   .navbar-nav .nav-link {
     font-size: 20px !important;
-  }
-  .navbar-nav {
-    gap: 8px;
   }
 }
 .navbar-nav .nav-link:before {
